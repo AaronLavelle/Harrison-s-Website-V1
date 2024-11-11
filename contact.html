@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Harrison Lavelle Designs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>Tell us about your 3D modeling project</p>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="projectType">Project Type</label>
+                    <select id="projectType" name="projectType" required>
+                        <option value="">Select a project type</option>
+                        <option value="architectural">Architectural Design</option>
+                        <option value="interior">Interior Design</option>
+                        <option value="landscape">Landscape Design</option>
+                        <option value="product">Product Design</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modelingRequirements">Modeling Requirements</label>
+                    <select id="modelingRequirements" name="modelingRequirements" multiple>
+                        <option value="lowPoly">Low Poly Modeling</option>
+                        <option value="highPoly">High Poly Modeling</option>
+                        <option value="texturing">Texturing</option>
+                        <option value="rendering">Rendering</option>
+                        <option value="animation">Animation</option>
+                    </select>
+                    <small>Hold Ctrl/Cmd to select multiple options</small>
+                </div>
+                <div class="form-group">
+                    <label for="dimensions">Project Dimensions (if applicable)</label>
+                    <div class="dimensions-group">
+                        <input type="number" id="length" name="length" placeholder="Length">
+                        <input type="number" id="width" name="width" placeholder="Width">
+                        <input type="number" id="height" name="height" placeholder="Height">
+                        <select id="unit" name="unit">
+                            <option value="meters">Meters</option>
+                            <option value="feet">Feet</option>
+                            <option value="mm">Millimeters</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="deadline">Project Deadline</label>
+                    <input type="date" id="deadline" name="deadline">
+                </div>
+                <div class="form-group">
+                    <label for="description">Project Description</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="reference">Reference Files (optional)</label>
+                    <input type="file" id="reference" name="reference" multiple accept=".jpg,.png,.pdf,.skp,.obj,.fbx">
+                    <small>Accepted formats: JPG, PNG, PDF, SKP, OBJ, FBX</small>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Request</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="contact.js"></script>
+</body>
+</html>

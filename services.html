@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Harrison Lavelle Designs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="services-header">
+            <h1>Our Services</h1>
+            <p>Choose the plan that best fits your needs</p>
+        </div>
+
+        <div class="plans-container">
+            <!-- Online Meetings Plan -->
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h2>Online Meetings</h2>
+                    <div class="price">
+                        <span class="amount">£50</span>
+                        <span class="period">/meeting</span>
+                    </div>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>3-hour consultation</li>
+                        <li>Project planning</li>
+                        <li>Design discussion</li>
+                        <li>Real-time feedback</li>
+                        <li>Screen sharing</li>
+                        <li>Meeting recording</li>
+                    </ul>
+                </div>
+                <div class="plan-footer">
+                    <button onclick="window.location.href='payment.html?plan=Online%20Meetings&price=50'" class="select-plan">Select Plan</button>
+                </div>
+            </div>
+
+            <!-- 3D Modeling Plan -->
+            <div class="plan-card featured">
+                <div class="plan-header">
+                    <h2>3D Modeling</h2>
+                    <div class="price">
+                        <span class="amount">£200</span>
+                        <span class="period">/project</span>
+                    </div>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Custom 3D models</li>
+                        <li>Texturing</li>
+                        <li>Lighting setup</li>
+                        <li>High-quality rendering</li>
+                        <li>2 revision rounds</li>
+                        <li>Source files included</li>
+                    </ul>
+                </div>
+                <div class="plan-footer">
+                    <button onclick="window.location.href='payment.html?plan=3D%20Modeling&price=200'" class="select-plan">Select Plan</button>
+                </div>
+            </div>
+
+            <!-- Combined Package -->
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h2>Complete Package</h2>
+                    <div class="price">
+                        <span class="amount">£300</span>
+                        <span class="period">/project</span>
+                    </div>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li>Everything in both plans</li>
+                        <li>2 consultation meetings</li>
+                        <li>Priority support</li>
+                        <li>3 revision rounds</li>
+                        <li>Extended support</li>
+                        <li>25% off next project</li>
+                    </ul>
+                </div>
+                <div class="plan-footer">
+                    <button onclick="window.location.href='payment.html?plan=Complete%20Package&price=300'" class="select-plan">Select Plan</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="additional-info">
+            <h3>Custom Requirements?</h3>
+            <p>Need something specific? Contact us for a customized solution tailored to your needs.</p>
+            <button onclick="window.location.href='contact.html'" class="contact-btn">Contact Us</button>
+        </div>
+    </main>
+    <script src="services.js"></script>
+</body>
+</html>
